@@ -1,0 +1,27 @@
+断网进行
+
+1、提取"R2015b_glnxa64.iso"文件，会生成“R2015b_glnxa64”文件夹。
+2、进入文件夹，并且执行install文件
+    cd R2015b_glnxa64
+    sudo ./install(注意此处要使用sudo)
+3、执行2之后会打开matlab的安装界面，选择秘钥激活，秘钥为09806-07443-53955-64350-21751-41297
+    注意尽量不要修改安装路径，后续操作需要用到路径，如果更改了安装路径，则在后续的操作中请自行更改操作路径
+   等待安装执行完成
+4、将激活文件粘贴到文件夹
+    sudo cp license_standalone.lic /usr/local/MATLAB/R2015b/bin/glnxa64
+5、开始激活，
+    打开安装路径下的文件夹
+    cd /usr/local/MATLAB/R2015b/bin
+    执行文件
+    sudo ./matlab
+    在本地选择激活文件，就是刚刚步骤4中复制过去的文件license_standalone.lic
+    完成激活
+6、破解matlab，找到文件"libmwservices.so"和"libcufft.so.7.0.28"
+    sudo cp libmwservices.so /usr/local/MATLAB/R2015b/bin/glnxa64
+    sudo cp libcufft.so.7.0.28 /usr/local/MATLAB/R2015b/bin/glnxa64
+7、大功告成，
+    打开matlab需要进入安装路径
+    cd /usr/local/MATLAB/R2015b/bin
+    然后执行
+    sudo ./matlab 
+    打开matlab
