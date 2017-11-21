@@ -1,0 +1,1 @@
+text_file = xml_read('158.xml');

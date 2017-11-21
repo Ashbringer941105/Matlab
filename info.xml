@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+   <name>Jack</name>
+   <name>song</name>
+   <gender>male</gender>
+   <address>Beijing</address>
+   <phone>
+      <mobilephone>123456</mobilephone>
+      <landline>012345</landline>
+   </phone>
+   <name>Tom</name>
+   <gender>female</gender>
+   <address>Tj</address>
+   <phone>
+      <mobilephone>123456789</mobilephone>
+      <landline>012345789</landline>
+   </phone>
+</info>
